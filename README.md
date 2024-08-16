@@ -18,7 +18,7 @@ const (
 )
 ```
 
-# Usage
+# USAGE
 - Google cloud run
 - Google cloud firestore
 - Google cloud storage
@@ -30,6 +30,13 @@ const (
 - CHANNELSECRET: LINEチャンネルシークレットトークン
 - BUCKETNAME: ファイル保存バケツ名
 
+# FUTURES
+- 出勤・退勤 -> 履歴化
+- 定数文字 -> 状態保存
+- 状態出力
+- 履歴出力（当月・前月
+- 備考入力
+
 
 # DEPLOY
 
@@ -37,12 +44,12 @@ const (
 $ gcloud run deploy --set-env-vars "PROJECTID=,ACCESSTOKEN=,CHANNELSECRET=,BUCKETNAME="
 ```
 
-## TODO
-- 出勤・退勤履歴出力
-- 時間外労働・備考入力
+# TODO
+- [ ] スケジュール機能
+- [ ] リマインダ機能
 
 
-## Options
+# Options
 - 出退勤厳格化(社内QRの当日出力かつ読み込み必須)
 - AI Chat
 - GPS自動出退勤及びMapURL出力
